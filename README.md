@@ -1,2 +1,2 @@
 # application2
-Movie application on React JS
+movie application on react js
