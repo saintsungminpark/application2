@@ -2,7 +2,7 @@
 movie application on react js
 
 ## features
-- [x] animation for poster image
+- [x] animation for movies
 - [x] svg animation for loding
 
 ## web
