@@ -1,16 +1,15 @@
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 body {
-    overflow: auto;
-    margin: 0;
+    overflow-x: hidden;
+    margin: 0px;
     padding: 0;
     font-family: "Helvetica Neue", sans-serif;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./image3.jpg');
     background-size: cover;
     background-color:black;
-    color: black;
+    width: 100%;
     height: 100%;
 }
 
@@ -20,23 +19,52 @@ body::-webkit-scrollbar {
 
 html, 
 body, 
-.container {
-    height: 100%;
-    display: flex;
-    justify-content: center; 
-}
-
-.loader .loader__text {
+.contain {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: white;
+    display: grid;
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
     animation-delay: 0.5s;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: url("image.jpg");
+}
+
+.loader .loader__svg {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+
+.header {
+    display: inline-block;
+    color: red;
+    margin: 10px 10px 15px 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover, .header:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.movie__header {
+    color: white;
+    margin: 15px 0px 0px 10px;
+    overflow-x: scroll;
+    overflow-y: inherit;
+    font-weight: initial;
+    font-size: 20px;
 }
 
 @keyframes fadeIn {
@@ -45,5 +73,23 @@ body,
     }
     to {
       opacity: 1;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .header {
+        color: red;
+        margin: 5px 0px 30px 5px;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    .movie__header {
+        color: white;
+        margin: 15px 0px 0px 5px;
+        overflow-x: scroll;
+        overflow-y: inherit;
+        font-weight: initial;
+        font-size: 16px;
     }
   }
