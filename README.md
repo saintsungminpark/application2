@@ -9,9 +9,7 @@ movie application on react js
 [https://saintsungminpark.github.io/application2](https://saintsungminpark.github.io/application2)
 
 mobile
-
 ![ex_screenshot](./screenshot1.jpg)
 
 web
-
 ![ex_screenshot](./screenshot2.jpg)
