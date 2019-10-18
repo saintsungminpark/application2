@@ -8,8 +8,10 @@ movie application on react js
 ## web
 [https://saintsungminpark.github.io/application2](https://saintsungminpark.github.io/application2)
 
-mobile . 
+mobile
+
 ![ex_screenshot](./screenshot1.jpg)
 
-web . 
+web
+
 ![ex_screenshot](./screenshot2.jpg)
