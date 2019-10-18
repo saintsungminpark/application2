@@ -18,7 +18,6 @@ class App extends React.Component {
     } = await axios.get(
       "https://yts.lt/api/v2/list_movies.json?sort_by=year&limit=50"
     );
-    // console.log(movies);
     this.setState({ movies1: movies});
   };
 
@@ -30,7 +29,6 @@ class App extends React.Component {
       } = await axios.get(
         "https://yts-proxy.now.sh/list_movies.json?sort_by=rating&with_rt_ratings=true&limit=50"
       );
-    // console.log(movies);
     this.setState({ movies2: movies});
   };
 
@@ -42,7 +40,6 @@ class App extends React.Component {
       } = await axios.get(
         "https://yts-proxy.now.sh/list_movies.json?sort_by=like_count&with_rt_ratings=true&limit=50"
       );
-    // console.log(movies);
     this.setState({ isLoading: false, movies3: movies});
   };
 
@@ -58,7 +55,7 @@ class App extends React.Component {
       <section className="contain">
         {isLoading ? (
           <div className="loader">
-            {/* <span className="loader__text">Loading...</span> */}
+            <a href="#"><h1 class="header">Movie</h1></a>
             <div class="loader__svg">
               <svg width="75" height="75" viewBox="0 0 50 50">
               <path opacity="0" d="M24.828,1.998c-12.744,0-23.074,10.331-23.074,23.075c0,12.743,10.331,23.074,23.074,23.074
@@ -80,6 +77,17 @@ class App extends React.Component {
         ) : (
           <div className="row">
             <a href="#"><h1 class="header">Movie</h1></a>
+            <div class="main__image1">
+              <div class="main__image2"></div>
+              <div class="main__image3"></div>
+              <div class="main__image4"></div>
+              <div class="main__script">
+                Allied soldiers from Belgium, 
+                the British Empire, 
+                and France are surrounded by the German Army, 
+                and evacuated during a fierce battle in World War II.
+              </div>
+            </div>
             <h2 className="movie__header">Recently Year</h2>
               <div className="row__inner">
                 {movies1.map(movie => (
