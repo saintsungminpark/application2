@@ -6,7 +6,7 @@ movie application on react js
 - [x] animation for movies
 - [x] svg animation for loding
 
-## web
+## demo
 [https://saintsungminpark.github.io/application2](https://saintsungminpark.github.io/application2)
 
 mobile                 
