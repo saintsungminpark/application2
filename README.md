@@ -4,7 +4,7 @@ movie application on react js
 ## features
 - [x] fetch movies from api
 - [x] animation for movies
-- [x] svg animation for laoding
+- [x] svg animation for loading
 
 ## demo
 [https://saintsungminpark.github.io/application2](https://saintsungminpark.github.io/application2)
