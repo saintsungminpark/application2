@@ -2,7 +2,7 @@
 movie application on react js
 
 ## features
-- [x] fetch movie from api
+- [x] fetch movies from api
 - [x] animation for movies
 - [x] svg animation for loding
 
